@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 수식입력 부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:lines="3"
+            android:singleLine="false" />
+    </LinearLayout>
+
+    <!-- 결과 이미지 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_weight="5265.05">
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/tv"-->
+            <!--android:text="result"/>-->
+
+        <!-- 결과 웹 브라우저-->
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webTv">
+
+        </WebView>
+    </LinearLayout>
+
+
+    <!-- 키패드 레이아웃 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+
+        <!-- 1번째 키패드 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/keyPad1">
+
+            <!-- 첫번째 키패드 첫번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/key1Button1"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:clickable="true"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button2"
+                android:layout_toRightOf="@+id/key1Button1"
+                android:id="@+id/key1Button2"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button3"
+                android:layout_toRightOf="@+id/key1Button2"
+                android:id="@+id/key1Button3"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button4"
+                android:layout_toRightOf="@+id/key1Button3"
+                android:id="@+id/key1Button4"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button5"
+                android:layout_toRightOf="@+id/key1Button4"
+                android:id="@+id/key1Button5"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button6"
+                android:layout_toRightOf="@+id/key1Button5"
+                android:id="@+id/key1Button6"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 첫번째 키패드 두번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key1button7"
+                android:layout_below="@+id/key1Button1"
+                android:id="@+id/key1Button7"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button8"
+                android:layout_below="@+id/key1Button1"
+                android:layout_toRightOf="@+id/key1Button7"
+                android:id="@+id/key1Button8"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button9"
+                android:layout_below="@+id/key1Button1"
+                android:layout_toRightOf="@+id/key1Button8"
+                android:id="@+id/key1Button9"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button10"
+                android:layout_below="@+id/key1Button1"
+                android:layout_toRightOf="@+id/key1Button9"
+                android:id="@+id/key1Button10"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button11"
+                android:layout_below="@+id/key1Button1"
+                android:layout_toRightOf="@+id/key1Button10"
+                android:id="@+id/key1Button11"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button12"
+                android:layout_below="@+id/key1Button1"
+                android:layout_toRightOf="@+id/key1Button11"
+                android:id="@+id/key1Button12"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 첫번째 키패드 세번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button13"
+                android:layout_below="@+id/key1Button7"
+                android:id="@+id/key1Button13"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button14"
+                android:layout_below="@+id/key1Button7"
+                android:layout_toRightOf="@+id/key1Button13"
+                android:id="@+id/key1Button14"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button15"
+                android:layout_below="@+id/key1Button7"
+                android:layout_toRightOf="@+id/key1Button14"
+                android:id="@+id/key1Button15"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button16"
+                android:layout_below="@+id/key1Button7"
+                android:layout_toRightOf="@+id/key1Button15"
+                android:id="@+id/key1Button16"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button17"
+                android:layout_below="@+id/key1Button7"
+                android:layout_toRightOf="@+id/key1Button16"
+                android:id="@+id/key1Button17"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button18"
+                android:layout_below="@+id/key1Button7"
+                android:layout_toRightOf="@+id/key1Button17"
+                android:id="@+id/key1Button18"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 첫번째 키패드 네번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button19"
+                android:layout_below="@+id/key1Button13"
+                android:id="@+id/key1Button19"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button20"
+                android:layout_below="@+id/key1Button13"
+                android:layout_toRightOf="@+id/key1Button19"
+                android:id="@+id/key1Button20"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button21"
+                android:layout_below="@+id/key1Button13"
+                android:layout_toRightOf="@+id/key1Button20"
+                android:id="@+id/key1Button21"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button22"
+                android:layout_below="@+id/key1Button13"
+                android:layout_toRightOf="@+id/key1Button21"
+                android:id="@+id/key1Button22"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button23"
+                android:layout_below="@+id/key1Button13"
+                android:layout_toRightOf="@+id/key1Button22"
+                android:id="@+id/key1Button23"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button24"
+                android:layout_below="@+id/key1Button13"
+                android:layout_toRightOf="@+id/key1Button23"
+                android:id="@+id/key1Button24"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 첫번째 키패드 5번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button25"
+                android:layout_below="@+id/key1Button20"
+                android:id="@+id/key1Button25"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button26"
+                android:layout_below="@+id/key1Button20"
+                android:layout_toRightOf="@+id/key1Button25"
+                android:id="@+id/key1Button26"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button27"
+                android:layout_below="@+id/key1Button20"
+                android:layout_toRightOf="@+id/key1Button26"
+                android:id="@+id/key1Button27"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button28"
+                android:layout_below="@+id/key1Button20"
+                android:layout_toRightOf="@+id/key1Button27"
+                android:id="@+id/key1Button28"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button29"
+                android:layout_below="@+id/key1Button20"
+                android:layout_toRightOf="@+id/key1Button28"
+                android:id="@+id/key1Button29"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button30"
+                android:layout_below="@+id/key1Button20"
+                android:layout_toRightOf="@+id/key1Button29"
+                android:id="@+id/key1Button30"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+        <!-- 2 번째 키패드 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/keyPad2"
+            android:visibility="invisible">
+
+            <!-- 2번째 키패드 첫번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/key2Button1"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button2"
+                android:layout_toRightOf="@+id/key2Button1"
+                android:id="@+id/key2Button2"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button3"
+                android:layout_toRightOf="@+id/key2Button2"
+                android:id="@+id/key2Button3"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button4"
+                android:layout_toRightOf="@+id/key2Button3"
+                android:id="@+id/key2Button4"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button5"
+                android:layout_toRightOf="@+id/key2Button4"
+                android:id="@+id/key2Button5"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button6"
+                android:layout_toRightOf="@+id/key2Button5"
+                android:id="@+id/key2Button6"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 2번째 키패드 두번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button7"
+                android:layout_below="@+id/key2Button1"
+                android:id="@+id/key2Button7"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button8"
+                android:layout_below="@+id/key2Button1"
+                android:layout_toRightOf="@+id/key2Button7"
+                android:id="@+id/key2Button8"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button9"
+                android:layout_below="@+id/key2Button1"
+                android:layout_toRightOf="@+id/key2Button8"
+                android:id="@+id/key2Button9"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button10"
+                android:layout_below="@+id/key2Button1"
+                android:layout_toRightOf="@+id/key2Button9"
+                android:id="@+id/key2Button10"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button11"
+                android:layout_below="@+id/key2Button1"
+                android:layout_toRightOf="@+id/key2Button10"
+                android:id="@+id/key2Button11"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button12"
+                android:layout_below="@+id/key2Button1"
+                android:layout_toRightOf="@+id/key2Button11"
+                android:id="@+id/key2Button12"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 2번째 키패드 세번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button13"
+                android:clickable="true"
+                android:layout_below="@+id/key2Button7"
+                android:id="@+id/key2Button13"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button14"
+                android:layout_below="@+id/key2Button7"
+                android:layout_toRightOf="@+id/key2Button13"
+                android:id="@+id/key2Button14"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button15"
+                android:layout_below="@+id/key2Button7"
+                android:layout_toRightOf="@+id/key2Button14"
+                android:id="@+id/key2Button15"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button16"
+                android:layout_below="@+id/key2Button7"
+                android:layout_toRightOf="@+id/key2Button15"
+                android:id="@+id/key2Button16"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button17"
+                android:layout_below="@+id/key2Button7"
+                android:layout_toRightOf="@+id/key2Button16"
+                android:id="@+id/key2Button17"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button18"
+                android:layout_below="@+id/key2Button7"
+                android:layout_toRightOf="@+id/key2Button17"
+                android:id="@+id/key2Button18"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 2번째 키패드 네번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button19"
+                android:layout_below="@+id/key2Button13"
+                android:id="@+id/key2Button19"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button20"
+                android:layout_below="@+id/key2Button13"
+                android:layout_toRightOf="@+id/key2Button19"
+                android:id="@+id/key2Button20"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button21"
+                android:layout_below="@+id/key2Button13"
+                android:layout_toRightOf="@+id/key2Button20"
+                android:id="@+id/key2Button21"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button22"
+                android:layout_below="@+id/key2Button13"
+                android:layout_toRightOf="@+id/key2Button21"
+                android:id="@+id/key2Button22"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button23"
+                android:layout_below="@+id/key2Button13"
+                android:layout_toRightOf="@+id/key2Button22"
+                android:id="@+id/key2Button23"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button24"
+                android:layout_below="@+id/key2Button13"
+                android:layout_toRightOf="@+id/key2Button23"
+                android:id="@+id/key2Button24"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 2번째 키패드 5번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button25"
+                android:layout_below="@+id/key2Button20"
+                android:id="@+id/key2Button25"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button26"
+                android:layout_below="@+id/key2Button20"
+                android:layout_toRightOf="@+id/key2Button25"
+                android:id="@+id/key2Button26"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button27"
+                android:layout_below="@+id/key2Button20"
+                android:layout_toRightOf="@+id/key2Button26"
+                android:id="@+id/key2Button27"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button28"
+                android:layout_below="@+id/key2Button20"
+                android:layout_toRightOf="@+id/key2Button27"
+                android:id="@+id/key2Button28"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key2button29"
+                android:layout_below="@+id/key2Button20"
+                android:layout_toRightOf="@+id/key2Button28"
+                android:id="@+id/key2Button29"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button30"
+                android:layout_below="@+id/key2Button20"
+                android:layout_toRightOf="@+id/key2Button29"
+                android:id="@+id/key2Button30"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+        <!-- 3 번째 키패드 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/keyPad3"
+            android:visibility="invisible">
+
+            <!-- 3번째 키패드 첫번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/key3Button1"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button2"
+                android:layout_toRightOf="@+id/key3Button1"
+                android:id="@+id/key3Button2"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button3"
+                android:layout_toRightOf="@+id/key3Button2"
+                android:id="@+id/key3Button3"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button4"
+                android:layout_toRightOf="@+id/key3Button3"
+                android:id="@+id/key3Button4"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button5"
+                android:layout_toRightOf="@+id/key3Button4"
+                android:id="@+id/key3Button5"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button6"
+                android:layout_toRightOf="@+id/key3Button5"
+                android:id="@+id/key3Button6"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 3번째 키패드 두번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button7"
+                android:layout_below="@+id/key3Button1"
+                android:id="@+id/key3Button7"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button8"
+                android:layout_below="@+id/key3Button1"
+                android:layout_toRightOf="@+id/key3Button7"
+                android:id="@+id/key3Button8"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button9"
+                android:layout_below="@+id/key3Button1"
+                android:layout_toRightOf="@+id/key3Button8"
+                android:id="@+id/key3Button9"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button10"
+                android:layout_below="@+id/key3Button1"
+                android:layout_toRightOf="@+id/key3Button9"
+                android:id="@+id/key3Button10"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button11"
+                android:layout_below="@+id/key3Button1"
+                android:layout_toRightOf="@+id/key3Button10"
+                android:id="@+id/key3Button11"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button12"
+                android:layout_below="@+id/key3Button1"
+                android:layout_toRightOf="@+id/key3Button11"
+                android:id="@+id/key3Button12"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 3번째 키패드 세번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button13"
+                android:layout_below="@+id/key3Button7"
+                android:id="@+id/key3Button13"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button14"
+                android:layout_below="@+id/key3Button7"
+                android:layout_toRightOf="@+id/key3Button13"
+                android:id="@+id/key3Button14"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button15"
+                android:layout_below="@+id/key3Button7"
+                android:layout_toRightOf="@+id/key3Button14"
+                android:id="@+id/key3Button15"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button16"
+                android:layout_below="@+id/key3Button7"
+                android:layout_toRightOf="@+id/key3Button15"
+                android:id="@+id/key3Button16"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button17"
+                android:layout_below="@+id/key3Button7"
+                android:layout_toRightOf="@+id/key3Button16"
+                android:id="@+id/key3Button17"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button18"
+                android:layout_below="@+id/key3Button7"
+                android:layout_toRightOf="@+id/key3Button17"
+                android:id="@+id/key3Button18"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 3번째 키패드 네번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button19"
+                android:layout_below="@+id/key3Button13"
+                android:id="@+id/key3Button19"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button20"
+                android:layout_below="@+id/key3Button13"
+                android:layout_toRightOf="@+id/key3Button19"
+                android:id="@+id/key3Button20"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button21"
+                android:layout_below="@+id/key3Button13"
+                android:layout_toRightOf="@+id/key3Button20"
+                android:id="@+id/key3Button21"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button22"
+                android:layout_below="@+id/key3Button13"
+                android:layout_toRightOf="@+id/key3Button21"
+                android:id="@+id/key3Button22"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button23"
+                android:layout_below="@+id/key3Button13"
+                android:layout_toRightOf="@+id/key3Button22"
+                android:id="@+id/key3Button23"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button24"
+                android:layout_below="@+id/key3Button13"
+                android:layout_toRightOf="@+id/key3Button23"
+                android:id="@+id/key3Button24"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 3번째 키패드 5번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button25"
+                android:layout_below="@+id/key3Button20"
+                android:id="@+id/key3Button25"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button26"
+                android:layout_below="@+id/key3Button20"
+                android:layout_toRightOf="@+id/key3Button25"
+                android:id="@+id/key3Button26"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button27"
+                android:layout_below="@+id/key3Button20"
+                android:layout_toRightOf="@+id/key3Button26"
+                android:id="@+id/key3Button27"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button28"
+                android:layout_below="@+id/key3Button20"
+                android:layout_toRightOf="@+id/key3Button27"
+                android:id="@+id/key3Button28"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key3button29"
+                android:layout_below="@+id/key3Button20"
+                android:layout_toRightOf="@+id/key3Button28"
+                android:id="@+id/key3Button29"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button30"
+                android:layout_below="@+id/key3Button20"
+                android:layout_toRightOf="@+id/key3Button29"
+                android:id="@+id/key3Button30"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+        </RelativeLayout>
+
+
+        <!-- 4 번째 키패드 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/keyPad4"
+            android:visibility="invisible">
+
+            <!-- 4번째 키패드 첫번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/key4Button1"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button2"
+                android:layout_toRightOf="@+id/key4Button1"
+                android:id="@+id/key4Button2"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button3"
+                android:layout_toRightOf="@+id/key4Button2"
+                android:id="@+id/key4Button3"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button4"
+                android:layout_toRightOf="@+id/key4Button3"
+                android:id="@+id/key4Button4"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button5"
+                android:layout_toRightOf="@+id/key4Button4"
+                android:id="@+id/key4Button5"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button6"
+                android:layout_toRightOf="@+id/key4Button5"
+                android:id="@+id/key4Button6"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 4번째 키패드 두번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button7"
+                android:layout_below="@+id/key4Button1"
+                android:id="@+id/key4Button7"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button8"
+                android:layout_below="@+id/key4Button1"
+                android:layout_toRightOf="@+id/key4Button7"
+                android:id="@+id/key4Button8"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button9"
+                android:layout_below="@+id/key4Button1"
+                android:layout_toRightOf="@+id/key4Button8"
+                android:id="@+id/key4Button9"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button1"
+                android:layout_toRightOf="@+id/key4Button9"
+                android:id="@+id/key4Button10"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button1"
+                android:layout_toRightOf="@+id/key4Button10"
+                android:id="@+id/key4Button11"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button12"
+                android:layout_below="@+id/key4Button1"
+                android:layout_toRightOf="@+id/key4Button11"
+                android:id="@+id/key4Button12"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 4번째 키패드 세번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button13"
+                android:layout_below="@+id/key4Button7"
+                android:id="@+id/key4Button13"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button14"
+                android:layout_below="@+id/key4Button7"
+                android:layout_toRightOf="@+id/key4Button13"
+                android:id="@+id/key4Button14"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button15"
+                android:layout_below="@+id/key4Button7"
+                android:layout_toRightOf="@+id/key4Button14"
+                android:id="@+id/key4Button15"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button7"
+                android:layout_toRightOf="@+id/key4Button15"
+                android:id="@+id/key4Button16"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button7"
+                android:layout_toRightOf="@+id/key4Button16"
+                android:id="@+id/key4Button17"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button18"
+                android:layout_below="@+id/key4Button7"
+                android:layout_toRightOf="@+id/key4Button17"
+                android:id="@+id/key4Button18"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <!-- 4번째 키패드 네번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button19"
+                android:layout_below="@+id/key4Button13"
+                android:id="@+id/key4Button19"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button20"
+                android:layout_below="@+id/key4Button13"
+                android:layout_toRightOf="@+id/key4Button19"
+                android:id="@+id/key4Button20"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button21"
+                android:layout_below="@+id/key4Button13"
+                android:layout_toRightOf="@+id/key4Button20"
+                android:id="@+id/key4Button21"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button13"
+                android:layout_toRightOf="@+id/key4Button21"
+                android:id="@+id/key4Button22"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button13"
+                android:layout_toRightOf="@+id/key4Button22"
+                android:id="@+id/key4Button23"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button24"
+                android:layout_below="@+id/key4Button13"
+                android:layout_toRightOf="@+id/key4Button23"
+                android:id="@+id/key4Button24"
+                android:scaleType="fitXY"
+                android:background="@null" />
+
+            <!-- 4번째 키패드 5번째 줄-->
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button25_1"
+                android:layout_below="@+id/key4Button20"
+                android:id="@+id/key4Button25"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button26"
+                android:layout_below="@+id/key4Button20"
+                android:layout_toRightOf="@+id/key4Button25"
+                android:id="@+id/key4Button26"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button27"
+                android:layout_below="@+id/key4Button20"
+                android:layout_toRightOf="@+id/key4Button26"
+                android:id="@+id/key4Button27"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button20"
+                android:layout_toRightOf="@+id/key4Button27"
+                android:id="@+id/key4Button28"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/key4button"
+                android:layout_below="@+id/key4Button20"
+                android:layout_toRightOf="@+id/key4Button28"
+                android:id="@+id/key4Button29"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:src="@drawable/button30"
+                android:layout_below="@+id/key4Button20"
+                android:layout_toRightOf="@+id/key4Button29"
+                android:id="@+id/key4Button30"
+                android:scaleType="fitXY"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+
+    <!-- 카메라, 키패드 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/cameraImage_key"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/camera_1"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/keyPadImage_key"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/key"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1.06">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.example.user.cameracapture.MyCameraSurface
+        android:id="@+id/previewFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <com.example.user.cameracapture.CropImageView
+        android:id="@+id/CropWindow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+
+        <!--android:text="Capture" />-->
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/capture"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+             />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+
+        <!--android:text="Capture" />-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    <ImageButton
+        android:id="@+id/cameraImage_cam"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/camera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_weight="1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+    <ImageButton
+        android:id="@+id/keyPadImage_cam"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/key_1"
+        android:layout_toRightOf="@+id/cameraImage_cam"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
